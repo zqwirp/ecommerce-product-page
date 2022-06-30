@@ -1,10 +1,18 @@
 import Navbar from "./components/Navbar";
+import Slider from "./components/Slider";
 
 function App() {
   return (
-    <div className='App'>
+    <div className='app'>
       <Navbar />
-      <div>App</div>
+
+      <div className="container">
+        <div className='product-wrapper'>
+          <Slider />
+        
+          <div>Product Desc</div>
+        </div>
+      </div>
     </div>
   );
 }

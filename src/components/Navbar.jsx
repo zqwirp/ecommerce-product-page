@@ -2,9 +2,15 @@ function Navbar() {
   return (
     <div className='container'>
       <div className='navbar'>
-        <div className='navbar__left'>
-          <img className='navbar__icon-menu' src='src/icons/icon-menu.svg' alt='menu' />
-          <img src='src/icons/logo.svg' alt='logo' />
+        <div className='navbar__left-side'>
+          <button className='icon navbar__icon-menu'>
+            <img src='src/icons/icon-menu.svg' alt='menu' />
+          </button>
+
+          <a href='#'>
+            <img src='src/icons/logo.svg' alt='logo' />
+          </a>
+
           <nav className='navbar__nav'>
             <a href='#'>Collections</a>
             <a href='#'>Men</a>
@@ -14,13 +20,14 @@ function Navbar() {
           </nav>
         </div>
 
-        <div className='navbar__right'>
-          <img src='src/icons/icon-cart.svg' alt='cart' />
-          <img
-            className='navbar__avatar'
-            src='src/images/image-avatar.png'
-            alt='logo'
-          />
+        <div className='navbar__right-side'>
+          <button className='icon navbar__icon-cart'>
+            <img src='src/icons/icon-cart.svg' alt='cart' />
+          </button>
+
+          <button className='navbar__avatar'>
+            <img src='src/images/image-avatar.png' alt='logo' />
+          </button>
         </div>
       </div>
     </div>
