@@ -53,17 +53,23 @@ body.no-scroll {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   min-height: 60px;
+  padding: 0 22px;
   box-shadow: 0 2px 2px -1px #00000022;
 }
 
 .navbar__left {
-  gap: 4vw;
+  gap: 22px;
+}
+
+.navbar__right {
+  gap: 16px;
 }
 
 .navbar__nav {
   display: none;
-  gap: 2vw;
+  gap: 20px;
 }
 
 .navbar__nav a {
@@ -94,7 +100,7 @@ body.no-scroll {
 
 @media screen and (min-width: 576px) {
   .container {
-    max-width: 540px;
+    /* max-width: 540px; */
     margin: 0 auto;
   }
 }
@@ -103,8 +109,17 @@ body.no-scroll {
   .container {
     max-width: 720px;
   }
+  .navbar {
+    padding: 0;
+  }
   .navbar__nav {
     display: flex;
+  }
+  .navbar__left {
+    gap: 40px;
+  }
+  .navbar__right {
+    gap: 22px;
   }
   .navbar__avatar {
     width: 42px;
