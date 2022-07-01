@@ -65,7 +65,7 @@ a {
   padding: 0 20px;
   min-height: 60px;
 
-  box-shadow: 0 2px 0 -1px #00000033;
+  box-shadow: 0 2px 2px -2px hsl(220, 14%, 75%);
 }
 .navbar__nav {
   display: none;
@@ -76,7 +76,7 @@ a {
 }
 .navbar__nav a:hover {
   color: black;
-  background-color: #eaeaea;
+  box-shadow: 0 -4px 0px -1px hsl(26, 100%, 55%) inset;
 }
 
 .navbar__left-side {
