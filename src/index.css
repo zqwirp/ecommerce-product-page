@@ -149,6 +149,9 @@ a {
   .navbar__avatar {
     width: 42px;
   }
+  .navbar__left-side {
+    gap: 42px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
