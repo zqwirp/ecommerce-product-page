@@ -131,6 +131,9 @@ a {
   .navbar__nav {
     display: flex;
   }
+  .navbar__avatar {
+    width: 36px;
+  }
   .product-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -142,6 +145,9 @@ a {
 @media screen and (min-width: 992px) {
   .container {
     max-width: 960px;
+  }
+  .navbar__avatar {
+    width: 42px;
   }
 }
 
