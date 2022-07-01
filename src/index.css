@@ -71,8 +71,10 @@ a {
   display: none;
 }
 .navbar__nav a {
-  color: hsl(219, 9%, 45%);
   padding: 36px 0;
+
+  font-size: 14px;
+  color: hsl(219, 9%, 45%);
 }
 .navbar__nav a:hover {
   color: black;
@@ -111,9 +113,6 @@ a {
     /* max-width: 540px; */
     margin: 0 auto;
   }
-  .navbar__nav {
-    gap: 20px;
-  }
   .product-group {
     padding: 36px 0;
   }
@@ -137,6 +136,7 @@ a {
   }
   .navbar__nav {
     display: flex;
+    gap: 24px;
   }
   .navbar__avatar {
     width: 36px;
@@ -162,7 +162,13 @@ a {
     width: 42px;
   }
   .navbar__left-side {
-    gap: 42px;
+    gap: 52px;
+  }
+  .navbar__right-side {
+    gap: 36px;
+  }
+  .navbar__nav {
+    gap: 28px;
   }
 }
 
