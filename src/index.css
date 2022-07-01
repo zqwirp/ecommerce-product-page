@@ -71,9 +71,11 @@ a {
   display: none;
 }
 .navbar__nav a {
+  color: hsl(219, 9%, 45%);
   padding: 36px 0;
 }
 .navbar__nav a:hover {
+  color: black;
   background-color: #eaeaea;
 }
 
