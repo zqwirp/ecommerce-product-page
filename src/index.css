@@ -96,7 +96,7 @@ a {
   width: 26px;
 }
 
-.product-wrapper {
+.product-group {
   display: grid;
   grid-gap: 16px;
   max-width: 540px;
@@ -114,7 +114,7 @@ a {
   .navbar__nav {
     gap: 20px;
   }
-  .product-wrapper {
+  .product-group {
     padding: 36px 0;
   }
 }
@@ -141,7 +141,7 @@ a {
   .navbar__avatar {
     width: 36px;
   }
-  .product-wrapper {
+  .product-group {
     grid-template-columns: 1fr 1fr;
     max-width: unset;
     padding: 68px 0;

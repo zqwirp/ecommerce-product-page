@@ -6,8 +6,6 @@ function Slider() {
         src='src/images/image-product-1.jpg'
         alt=''
       />
-
-      <div className='thumbnail'>Thumbnail</div>
     </div>
   );
 }
