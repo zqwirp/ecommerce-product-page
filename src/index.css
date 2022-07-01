@@ -95,7 +95,7 @@ a {
 }
 
 .product-wrapper {
-  max-width: 600px;
+  max-width: 576px;
   margin: 0 auto;
 }
 
@@ -103,6 +103,9 @@ a {
   .container {
     /* max-width: 540px; */
     margin: 0 auto;
+  }
+  .navbar__nav {
+    gap: 20px;
   }
   .product-wrapper {
     padding: 36px 0;
