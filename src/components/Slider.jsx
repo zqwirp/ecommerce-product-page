@@ -7,7 +7,7 @@ function Slider() {
         alt=''
       />
 
-      <div>Thumbnail</div>
+      <div className='thumbnail'>Thumbnail</div>
     </div>
   );
 }

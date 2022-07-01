@@ -95,8 +95,11 @@ a {
 }
 
 .product-wrapper {
-  max-width: 576px;
+  max-width: 540px;
   margin: 0 auto;
+}
+.thumbnail {
+  display: none;
 }
 
 @media screen and (min-width: 576px) {
@@ -139,6 +142,9 @@ a {
     grid-template-columns: 1fr 1fr;
     max-width: unset;
     padding: 68px 0;
+  }
+  .thumbnail {
+    display: block;
   }
 }
 
