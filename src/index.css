@@ -140,8 +140,12 @@ a {
   .product-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
     max-width: unset;
     padding: 68px 0;
+  }
+  .slider__img {
+    cursor: pointer;
   }
   .thumbnail {
     display: block;
