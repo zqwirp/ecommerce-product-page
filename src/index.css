@@ -107,6 +107,30 @@ a {
 .thumbnail {
   display: none;
 }
+.slider {
+  position: relative;
+}
+.slider .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 36px;
+  height: 36px;
+
+  background-color: white;
+  border-radius: 50%;
+}
+.slider__btn-prev {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+}
+.slider__btn-next {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+}
 
 @media screen and (min-width: 576px) {
   .container {
