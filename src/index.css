@@ -97,6 +97,8 @@ a {
 }
 
 .product-wrapper {
+  display: grid;
+  grid-gap: 16px;
   max-width: 540px;
   margin: 0 auto;
 }
@@ -140,9 +142,7 @@ a {
     width: 36px;
   }
   .product-wrapper {
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 16px;
     max-width: unset;
     padding: 68px 0;
   }
