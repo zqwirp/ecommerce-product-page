@@ -123,12 +123,12 @@ a {
 }
 .slider__btn-prev {
   position: absolute;
-  top: 50%;
+  top: 48%;
   left: 10px;
 }
 .slider__btn-next {
   position: absolute;
-  top: 50%;
+  top: 48%;
   right: 10px;
 }
 
@@ -172,6 +172,9 @@ a {
   }
   .slider__img {
     cursor: pointer;
+  }
+  .slider .btn {
+    display: none;
   }
   .thumbnail {
     display: block;
