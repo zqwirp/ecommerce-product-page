@@ -171,9 +171,21 @@ a {
 .lightbox__main-img {
   border-radius: 10px;
 }
-.lightbox__thumbnail > img {
+.lightbox__thumbnail-img {
   border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  overflow: hidden;
 }
+/* .lightbox__thumbnail > img:hover { */
+/*   border: 2px solid orange; */
+/* } */
+/* .lightbox__thumbnail > img:hover:after { */
+/*   content: ''; */
+/*   position: absolute; */
+/*   inset: 0; */
+/*   background-color: #000; */
+/* } */
 
 @media screen and (min-width: 576px) {
   .container {
