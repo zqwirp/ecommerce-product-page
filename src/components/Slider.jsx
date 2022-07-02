@@ -3,7 +3,7 @@ import { useData } from "../contexts/DataContext";
 
 function Slider() {
   // const [imgNum, setImgNum] = useState(1);
-  const { setIsLightboxOpen } = useData();
+  const { setIsLightboxOpen, productImgNum } = useData();
 
   return (
     <div className='slider'>
@@ -15,7 +15,7 @@ function Slider() {
           }
         }}
         className='slider__img'
-        src='src/images/image-product-1.jpg'
+        src={`src/images/image-product-${productImgNum}.jpg `}
         alt='img'
       />
 
