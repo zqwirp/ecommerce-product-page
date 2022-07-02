@@ -3,7 +3,7 @@ import { useData } from "../contexts/DataContext";
 
 function Slider() {
   // const [imgNum, setImgNum] = useState(1);
-  const { setIsLightboxOpen, productImgNum } = useData();
+  const { setIsLightboxOpen, productImgNum, setProductImgNum } = useData();
 
   return (
     <div className='slider'>
@@ -19,10 +19,29 @@ function Slider() {
         alt='img'
       />
 
-      <button className='slider__btn-prev btn'>
+      <button
+        onClick={() => {
+          if (productImgNum > 1) {
+            setProductImgNum(state => (state -= 1));
+          } else {
+            setProductImgNum(4);
+          }
+        }}
+        className='slider__btn-prev btn'
+      >
         <img src='src/icons/icon-previous.svg' alt='img' />
       </button>
-      <button className='slider__btn-next btn'>
+
+      <button
+        onClick={() => {
+          if (productImgNum < 4) {
+            setProductImgNum(state => (state += 1));
+          } else {
+            setProductImgNum(1);
+          }
+        }}
+        className='slider__btn-next btn'
+      >
         <img src='src/icons/icon-next.svg' alt='img' />
       </button>
     </div>
