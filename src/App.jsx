@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import ProductImages from "./components/ProductImages";
+import Lightbox from "./components/Lightbox";
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
           <div>Product Desc</div>
         </div>
       </div>
+
+      <Lightbox />
     </div>
   );
 }

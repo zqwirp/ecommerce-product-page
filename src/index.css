@@ -132,6 +132,48 @@ a {
   right: 10px;
 }
 
+.lightbox {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: hsl(0 0% 0% / 0.75);
+}
+
+.lightbox__body {
+  max-width: 420px;
+}
+.lightbox__btn-close {
+  margin-left: auto;
+  margin-bottom: 16px;
+}
+.lightbox__btn-close img {
+  width: 16px;
+  filter: brightness(90);
+}
+.lightbox__btn-close:hover img {
+  filter: invert(47%) sepia(99%) saturate(861%) hue-rotate(347deg)
+    brightness(104%) contrast(103%);
+}
+.lightbox__thumbnail {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 24px;
+
+  max-width: 360px;
+  margin: 28px auto 0;
+}
+
+.lightbox__main-img {
+  border-radius: 10px;
+}
+.lightbox__thumbnail > img {
+  border-radius: 8px;
+}
+
 @media screen and (min-width: 576px) {
   .container {
     /* max-width: 540px; */

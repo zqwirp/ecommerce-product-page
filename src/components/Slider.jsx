@@ -1,4 +1,8 @@
+// import { useState } from "react";
+
 function Slider() {
+  // const [imgNum, setImgNum] = useState(1);
+
   return (
     <div className='slider'>
       <img
