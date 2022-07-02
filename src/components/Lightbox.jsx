@@ -23,6 +23,14 @@ function Lightbox() {
               src={`src/images/image-product-${productImgNum}.jpg`}
               alt='image'
             />
+
+            <button className='btn lightbox__btn-prev'>
+              <img src='src/icons/icon-previous.svg' />
+            </button>
+
+            <button className='btn lightbox__btn-next'>
+              <img src='src/icons/icon-next.svg' />
+            </button>
           </div>
 
           <div className='lightbox__thumbnail'>
