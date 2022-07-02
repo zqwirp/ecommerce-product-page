@@ -1,11 +1,17 @@
 // import { useState } from "react";
+import { useData } from "../contexts/DataContext";
 
 function Slider() {
   // const [imgNum, setImgNum] = useState(1);
+  const { setIsLightboxOpen } = useData();
 
   return (
     <div className='slider'>
       <img
+        onClick={() => {
+          if (window.innerWidth > 768) setIsLightboxOpen(true);
+          return;
+        }}
         className='slider__img'
         src='src/images/image-product-1.jpg'
         alt='img'

@@ -1,8 +1,15 @@
+import { useData } from "../contexts/DataContext";
+
 function Lightbox() {
+  const { setIsLightboxOpen } = useData();
+
   return (
     <div className='lightbox'>
       <div className='lightbox__body'>
-        <button className='lightbox__btn-close'>
+        <button
+          onClick={() => setIsLightboxOpen(false)}
+          className='lightbox__btn-close'
+        >
           <img src='src/icons/icon-close.svg' alt='icon' />
         </button>
 

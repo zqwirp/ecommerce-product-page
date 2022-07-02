@@ -1,8 +1,12 @@
+import { useState } from "react";
+import { useData } from "./contexts/DataContext";
 import Navbar from "./components/Navbar";
 import ProductImages from "./components/ProductImages";
 import Lightbox from "./components/Lightbox";
 
 function App() {
+  const { isLightboxOpen } = useData();
+
   return (
     <div className='app'>
       <Navbar />
@@ -15,7 +19,7 @@ function App() {
         </div>
       </div>
 
-      <Lightbox />
+      {isLightboxOpen && <Lightbox />}
     </div>
   );
 }

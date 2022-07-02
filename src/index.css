@@ -154,6 +154,7 @@ a {
   width: 16px;
   filter: brightness(90);
 }
+.lightbox__btn-close:active img,
 .lightbox__btn-close:hover img {
   filter: invert(47%) sepia(99%) saturate(861%) hue-rotate(347deg)
     brightness(104%) contrast(103%);
