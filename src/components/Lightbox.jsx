@@ -24,11 +24,29 @@ function Lightbox() {
               alt='image'
             />
 
-            <button className='btn lightbox__btn-prev'>
+            <button
+              onClick={() => {
+                if (productImgNum > 1) {
+                  setProductImgNum(state => (state -= 1));
+                } else {
+                  setProductImgNum(4);
+                }
+              }}
+              className='btn lightbox__btn-prev'
+            >
               <img src='src/icons/icon-previous.svg' />
             </button>
 
-            <button className='btn lightbox__btn-next'>
+            <button
+              onClick={() => {
+                if (productImgNum < 4) {
+                  setProductImgNum(state => (state += 1));
+                } else {
+                  setProductImgNum(1);
+                }
+              }}
+              className='btn lightbox__btn-next'
+            >
               <img src='src/icons/icon-next.svg' />
             </button>
           </div>
