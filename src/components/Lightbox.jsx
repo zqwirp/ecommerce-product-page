@@ -26,7 +26,10 @@ function Lightbox() {
           </div>
           <div className='lightbox__thumbnail'>
             {[1, 2, 3, 4].map((n, i) => (
-              <div key={i} className='lightbox__thumbnail-img'>
+              <div
+                key={i}
+                className={`lightbox__thumbnail-img ${i === 0 && "active"}`}
+              >
                 <img src={"src/images/image-product-" + n + ".jpg"} alt={n} />
               </div>
             ))}

@@ -172,19 +172,28 @@ a {
   border-radius: 10px;
 }
 .lightbox__thumbnail-img {
+  position: relative;
   border-radius: 8px;
   cursor: pointer;
   border: 2px solid transparent;
   overflow: hidden;
 }
+.lightbox__thumbnail-img:hover:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #bbbbbbbb;
+}
+.lightbox__thumbnail-img.active:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #dddddddd;
+  border: 2px solid hsl(26, 100%, 55%);
+}
 /* .lightbox__thumbnail > img:hover { */
-/*   border: 2px solid orange; */
 /* } */
 /* .lightbox__thumbnail > img:hover:after { */
-/*   content: ''; */
-/*   position: absolute; */
-/*   inset: 0; */
-/*   background-color: #000; */
 /* } */
 
 @media screen and (min-width: 576px) {
