@@ -1,7 +1,7 @@
 import { useData } from "../contexts/DataContext";
 
 function Lightbox() {
-  const { setIsLightboxOpen } = useData();
+  const { setIsLightboxOpen, productImgNum, setProductImgNum } = useData();
 
   return (
     <div className='lightbox'>
@@ -20,15 +20,19 @@ function Lightbox() {
           <div className='lightbox__main'>
             <img
               className='lightbox__main-img'
-              src='src/images/image-product-1.jpg'
+              src={`src/images/image-product-${productImgNum}.jpg`}
               alt='image'
             />
           </div>
+
           <div className='lightbox__thumbnail'>
             {[1, 2, 3, 4].map((n, i) => (
               <div
                 key={i}
-                className={`lightbox__thumbnail-img ${i === 0 && "active"}`}
+                className={`lightbox__thumbnail-img ${
+                  i === productImgNum - 1 && "active"
+                }`}
+                onClick={() => setProductImgNum(n)}
               >
                 <img src={"src/images/image-product-" + n + ".jpg"} alt={n} />
               </div>
