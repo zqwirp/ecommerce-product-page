@@ -233,6 +233,7 @@ a {
     grid-template-columns: 1fr 1fr;
     max-width: unset;
     padding: 68px 0;
+    grid-gap: 40px
   }
   .slider__img {
     cursor: pointer;
@@ -265,11 +266,19 @@ a {
   .navbar__nav {
     gap: 28px;
   }
+  .product-group {
+    padding: 80px 36px;
+    grid-gap: 100px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1140px;
+  }
+  .product-group {
+    padding: 100px 40px;
+    grid-gap: 120px;
   }
 }
 
