@@ -101,7 +101,7 @@ a {
 .product-group {
   display: grid;
   grid-gap: 16px;
-  max-width: 540px;
+  max-width: 480px;
   margin: 0 auto;
 }
 .thumbnail {
@@ -262,7 +262,7 @@ a {
   .product-group {
     grid-template-columns: 1fr 1fr;
     max-width: unset;
-    padding: 68px 0;
+    padding: 60px 0;
   }
   .slider__img {
     cursor: pointer;
@@ -296,7 +296,7 @@ a {
     gap: 28px;
   }
   .product-group {
-    padding: 80px 36px;
+    padding: 72px 36px;
     grid-gap: 100px;
   }
 }
@@ -306,7 +306,7 @@ a {
     max-width: 1140px;
   }
   .product-group {
-    padding: 100px 40px;
+    padding: 100px 48px;
     grid-gap: 120px;
   }
 }
