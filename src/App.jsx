@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useData } from "./contexts/DataContext";
 import Navbar from "./components/Navbar";
 import ProductImages from "./components/ProductImages";

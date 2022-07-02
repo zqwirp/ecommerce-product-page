@@ -13,7 +13,6 @@ function Slider() {
             setIsLightboxOpen(true);
             document.body.style.overflow = "hidden";
           }
-          return;
         }}
         className='slider__img'
         src='src/images/image-product-1.jpg'

@@ -34,7 +34,7 @@ function Lightbox() {
                 }`}
                 onClick={() => setProductImgNum(n)}
               >
-                <img src={"src/images/image-product-" + n + ".jpg"} alt={n} />
+                <img src={`src/images/image-product-${n}.jpg`} alt={n} />
               </div>
             ))}
           </div>
