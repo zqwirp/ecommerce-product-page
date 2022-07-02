@@ -131,6 +131,11 @@ a {
   top: 48%;
   right: 10px;
 }
+.slider .btn:active img,
+.slider .btn:hover img {
+  filter: invert(47%) sepia(99%) saturate(861%) hue-rotate(347deg)
+    brightness(104%) contrast(103%);
+}
 
 .lightbox {
   position: fixed;
