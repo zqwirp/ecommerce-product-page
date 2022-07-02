@@ -215,6 +215,7 @@ a {
   }
   .slider__img {
     cursor: pointer;
+    border-radius: 10px;
   }
   .slider .btn {
     display: none;

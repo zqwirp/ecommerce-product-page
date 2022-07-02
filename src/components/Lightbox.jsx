@@ -7,7 +7,10 @@ function Lightbox() {
     <div className='lightbox'>
       <div className='lightbox__body'>
         <button
-          onClick={() => setIsLightboxOpen(false)}
+          onClick={() => {
+            setIsLightboxOpen(false);
+            document.body.style.overflow = "revert";
+          }}
           className='lightbox__btn-close'
         >
           <img src='src/icons/icon-close.svg' alt='icon' />

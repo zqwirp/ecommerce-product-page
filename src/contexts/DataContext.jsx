@@ -7,7 +7,7 @@ export function useData() {
 }
 
 export function DataProvider({ children }) {
-  const [isLightboxOpen, setIsLightboxOpen] = useState(true);
+  const [isLightboxOpen, setIsLightboxOpen] = useState(false);
 
   return (
     <DataContext.Provider value={{ isLightboxOpen, setIsLightboxOpen }}>

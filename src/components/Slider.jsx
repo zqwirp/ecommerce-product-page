@@ -9,7 +9,10 @@ function Slider() {
     <div className='slider'>
       <img
         onClick={() => {
-          if (window.innerWidth > 768) setIsLightboxOpen(true);
+          if (window.innerWidth > 768) {
+            setIsLightboxOpen(true);
+            document.body.style.overflow = "hidden";
+          }
           return;
         }}
         className='slider__img'
