@@ -108,8 +108,21 @@ a {
   top: 0;
   left: 0;
   bottom: 0;
+
   width: 300px;
+  padding: 24px 0 0 30px;
+
   background-color: white;
+}
+.offcanvas__close-btn {
+  margin-bottom: 48px;
+}
+.offcanvas__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  font-weight: bold;
 }
 
 .product-group {
