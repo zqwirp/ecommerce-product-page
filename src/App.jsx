@@ -2,6 +2,7 @@ import { useData } from "./contexts/DataContext";
 import Navbar from "./components/Navbar";
 import ProductImages from "./components/ProductImages";
 import Lightbox from "./components/Lightbox";
+import Offcanvas from "./components/Offcanvas";
 
 function App() {
   const { isLightboxOpen } = useData();
@@ -19,6 +20,7 @@ function App() {
       </div>
 
       {isLightboxOpen && <Lightbox />}
+      <Offcanvas />
     </div>
   );
 }

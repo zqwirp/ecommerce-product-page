@@ -98,6 +98,20 @@ a {
   width: 26px;
 }
 
+.offcanvas-bg {
+  position: fixed;
+  inset: 0;
+  background-color: hsl(0 0% 0% / 0.75);
+}
+.offcanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  background-color: white;
+}
+
 .product-group {
   display: grid;
   grid-gap: 16px;
