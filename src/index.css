@@ -114,6 +114,13 @@ a {
 
   background-color: white;
 }
+.offcanvas.active {
+  animation: slide-in 0.5s;
+}
+@keyframes slide-in {
+  from { transform: translateX(-100%) }
+  to { transform: translateX(0) }
+}
 .offcanvas__close-btn {
   margin-bottom: 48px;
 }
@@ -332,6 +339,9 @@ a {
   }
   .lightbox {
     display: flex;
+  }
+  .offcanvas-bg {
+    display: none;
   }
 }
 

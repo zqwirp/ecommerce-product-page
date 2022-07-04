@@ -5,7 +5,7 @@ import Lightbox from "./components/Lightbox";
 import Offcanvas from "./components/Offcanvas";
 
 function App() {
-  const { isLightboxOpen } = useData();
+  const { isLightboxOpen, isOffcanvasOpen } = useData();
 
   return (
     <div className='app'>
@@ -20,7 +20,7 @@ function App() {
       </div>
 
       {isLightboxOpen && <Lightbox />}
-      <Offcanvas />
+      {isOffcanvasOpen && <Offcanvas />}
     </div>
   );
 }

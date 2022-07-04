@@ -8,6 +8,8 @@ export function useData() {
 
 export function DataProvider({ children }) {
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
+  const [isOffcanvasOpen, setIsOffcanvasOpen] = useState(true);
+
   const [productImgNum, setProductImgNum] = useState(1);
 
   return (
@@ -15,6 +17,8 @@ export function DataProvider({ children }) {
       value={{
         isLightboxOpen,
         setIsLightboxOpen,
+        isOffcanvasOpen,
+        setIsOffcanvasOpen,
         productImgNum,
         setProductImgNum,
       }}

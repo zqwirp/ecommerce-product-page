@@ -1,9 +1,19 @@
+import { useData } from "../contexts/DataContext";
+
 function Navbar() {
+  const { setIsOffcanvasOpen } = useData();
+
   return (
     <div className='container'>
       <div className='navbar'>
         <div className='navbar__left-side'>
-          <button className='icon navbar__icon-menu'>
+          <button
+            className='icon navbar__icon-menu'
+            onClick={() => {
+              setIsOffcanvasOpen(true);
+              document.body.style.overflow = "hidden";
+            }}
+          >
             <img src='src/icons/icon-menu.svg' alt='menu' />
           </button>
 
