@@ -1,6 +1,7 @@
 import { useData } from "./contexts/DataContext";
 import Navbar from "./components/Navbar";
 import ProductImages from "./components/ProductImages";
+import ProductBody from "./components/ProductBody";
 import Lightbox from "./components/Lightbox";
 import Offcanvas from "./components/Offcanvas";
 
@@ -15,7 +16,7 @@ function App() {
         <div className='product-group'>
           <ProductImages />
 
-          <div>Product Desc</div>
+          <ProductBody />
         </div>
       </div>
 

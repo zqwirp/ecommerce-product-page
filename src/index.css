@@ -118,8 +118,12 @@ a {
   animation: slide-in 0.5s;
 }
 @keyframes slide-in {
-  from { transform: translateX(-100%) }
-  to { transform: translateX(0) }
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 .offcanvas__close-btn {
   margin-bottom: 48px;
@@ -176,6 +180,14 @@ a {
     brightness(104%) contrast(103%);
 }
 
+.product__sub-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: hsl(26, 100%, 55%);
+  letter-spacing: 1.5px;
+  margin-bottom: 1em;
+}
+
 .lightbox {
   position: fixed;
   inset: 0;
@@ -186,7 +198,6 @@ a {
 
   background-color: hsl(0 0% 0% / 0.75);
 }
-
 .lightbox__body {
   max-width: 420px;
 }
@@ -374,6 +385,9 @@ a {
   .product-group {
     padding: 100px 48px;
     grid-gap: 120px;
+  }
+  .product__body {
+    padding: 50px 0;
   }
 }
 
