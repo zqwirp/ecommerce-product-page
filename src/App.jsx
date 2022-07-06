@@ -18,6 +18,10 @@ function App() {
 
           <ProductBody />
         </div>
+
+        <footer style={{ textAlign: "center", lineHeight: "50px" }}>
+          Footer
+        </footer>
       </div>
 
       {isLightboxOpen && <Lightbox />}

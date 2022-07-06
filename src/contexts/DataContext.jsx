@@ -7,8 +7,10 @@ export function useData() {
 }
 
 export function DataProvider({ children }) {
+  const [quantity, setQuantity] = useState(0);
+
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
-  const [isOffcanvasOpen, setIsOffcanvasOpen] = useState(true);
+  const [isOffcanvasOpen, setIsOffcanvasOpen] = useState(false);
 
   const [productImgNum, setProductImgNum] = useState(1);
 
@@ -21,6 +23,8 @@ export function DataProvider({ children }) {
         setIsOffcanvasOpen,
         productImgNum,
         setProductImgNum,
+        quantity,
+        setQuantity,
       }}
     >
       {children}

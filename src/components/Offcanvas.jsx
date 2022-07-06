@@ -10,7 +10,7 @@ function Offcanvas() {
           className='btn offcanvas__close-btn'
           onClick={() => {
             setIsOffcanvasOpen(false);
-            // document.body.style.overflow = "revert";
+            document.body.style.overflow = "revert";
           }}
         >
           <img src='src/icons/icon-close.svg' />

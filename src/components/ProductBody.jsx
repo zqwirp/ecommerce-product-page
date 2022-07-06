@@ -1,4 +1,8 @@
+import { useData } from "../contexts/DataContext";
+
 function ProductBody() {
+  const { quantity, setQuantity } = useData();
+
   return (
     <div className='product__body'>
       <div className='product__sub-title'>SNEAKER COMPANY</div>
@@ -20,11 +24,36 @@ function ProductBody() {
 
       <div className='product__btn-group'>
         <div className='product__btn-quantity-group'>
-          <button>button</button>
-          <div className='quantity'>5</div>
-          <button>button</button>
+          <button
+            onClick={() =>
+              setQuantity(state => {
+                if (state < 1) return 0;
+                return state - 1;
+              })
+            }
+          >
+            <img src='src/icons/icon-minus.svg' />
+          </button>
+          <div className='quantity'>{quantity}</div>
+          <button
+            onClick={() =>
+              setQuantity(state => {
+                if (state >= 9) return state;
+                return state + 1;
+              })
+            }
+          >
+            <img src='src/icons/icon-plus.svg' />
+          </button>
         </div>
-        <button>button</button>
+
+        <button className='product__btn-add'>
+          <img
+            src='src/icons/icon-cart.svg'
+            style={{ display: "inline-block" }}
+          />
+          <div>Add to Cart</div>
+        </button>
       </div>
     </div>
   );
