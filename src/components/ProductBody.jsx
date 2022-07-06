@@ -17,6 +17,15 @@ function ProductBody() {
         </div>
         <div className='price-w-discount'>$250.00</div>
       </div>
+
+      <div className='product__btn-group'>
+        <div className='product__btn-quantity-group'>
+          <button>button</button>
+          <div className='quantity'>5</div>
+          <button>button</button>
+        </div>
+        <button>button</button>
+      </div>
     </div>
   );
 }

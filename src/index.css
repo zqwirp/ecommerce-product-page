@@ -187,37 +187,38 @@ a {
   padding: 0 24px;
 }
 .product__sub-title {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   color: hsl(26, 100%, 55%);
   letter-spacing: 1.5px;
-  margin-bottom: 1em;
+  margin-bottom: 12px;
 }
 .product__title {
-  font-size: 48px;
+  font-size: 36px;
   font-weight: bold;
   letter-spacing: 0px;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 .product__desc {
-  font-size: 16px;
+  font-size: 14px;
   color: hsl(219, 9%, 45%);
-  letter-spacing: 0.2px;
+  letter-spacing: 0.1px;
   line-height: 1.8;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 .product-price-group {
   display: flex;
   align-items: start;
   justify-content: space-between;
+  margin-bottom: 42px;
 }
 .product-price-discount-group {
   display: flex;
   align-items: start;
-  gap: 18px;
+  gap: 16px;
 }
 .price-w-discount {
-  font-size: 15px;
+  font-size: 14px;
   color: hsl(220, 14%, 75%);
   font-weight: bold;
   text-decoration: line-through;
@@ -229,10 +230,28 @@ a {
 .discount {
   padding: 0.4em;
   background-color: hsl(25, 100%, 94%);
-  font-size: 15px;
+  font-size: 14px;
   font-weight: bold;
   color: hsl(26, 100%, 55%);
   border-radius: 5px;
+}
+.product__btn-group {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.product__btn-quantity-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(223, 64%, 98%);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.product__btn-quantity-group button {
+  padding: 1em;
+}
+.product__btn-quantity-group .quantity {
+  font-weight: bold;
 }
 
 .lightbox {
@@ -357,7 +376,7 @@ a {
     width: 36px;
   }
   .product-group {
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 1.2fr;
     max-width: unset;
     padding: 60px 0;
     grid-gap: 24px;
@@ -431,6 +450,21 @@ a {
     grid-template-columns: 1fr 1fr;
     padding: 72px 36px;
     grid-gap: 58px;
+  }
+  .product__sub-title {
+    font-size: 15px;
+  }
+  .product__title {
+    font-size: 48px;
+  }
+  .product__desc {
+    font-size: 16px;
+  }
+  .price-w-discount {
+    font-size: 15px;
+  }
+  .discount {
+    font-size: 15px;
   }
 }
 
