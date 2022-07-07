@@ -1,4 +1,5 @@
 import { useData } from "../contexts/DataContext";
+import Popover from "./Popover";
 
 function Navbar() {
   const { setIsOffcanvasOpen } = useData();
@@ -31,9 +32,7 @@ function Navbar() {
         </div>
 
         <div className='navbar__right-side'>
-          <button className='icon navbar__icon-cart'>
-            <img src='src/icons/icon-cart.svg' alt='cart' />
-          </button>
+          <Popover />
 
           <button className='navbar__avatar'>
             <img src='src/images/image-avatar.png' alt='logo' />
