@@ -8,6 +8,7 @@ export function useData() {
 
 export function DataProvider({ children }) {
   const [quantity, setQuantity] = useState(0);
+  const [cartItems, setCartItems] = useState([]);
 
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
   const [isOffcanvasOpen, setIsOffcanvasOpen] = useState(false);
@@ -25,6 +26,8 @@ export function DataProvider({ children }) {
         setProductImgNum,
         quantity,
         setQuantity,
+        cartItems,
+        setCartItems,
       }}
     >
       {children}
