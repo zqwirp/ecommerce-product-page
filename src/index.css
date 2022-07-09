@@ -103,12 +103,19 @@ a {
   box-shadow: 0 0 0 2px hsl(26, 100%, 55%);
 }
 
-.icon:active,
-.icon:hover {
+.navbar__icon-menu:hover img,
+.navbar__icon-menu:active img,
+.navbar__icon-cart:hover img,
+.navbar__icon-cart:active img,
+.content__btn:hover img,
+.content__btn:active img {
   filter: brightness(0.2);
 }
-.navbar__icon-menu.active,
-.navbar__icon-cart.active {
+.navbar__icon-cart {
+  position: relative;
+}
+.navbar__icon-menu.active img,
+.navbar__icon-cart.active img {
   filter: brightness(0.2);
 }
 
@@ -161,6 +168,19 @@ a {
   grid-row: 1 / 3;
 
   cursor: pointer;
+}
+.popover .btn-checkout {
+  width: 100%;
+  margin-top: 40px;
+  padding: 20px 0;
+  background-color: hsl(26, 100%, 55%);
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+}
+.popover .btn-checkout:active,
+.popover .btn-checkout:hover {
+  background-color: hsl(26, 100%, 65%);
 }
 
 .offcanvas-bg {
