@@ -1,7 +1,8 @@
 import { useData } from "../contexts/DataContext";
+import productData from "../data.json";
 
 function ProductBody() {
-  const { quantity, setQuantity } = useData();
+  const { quantity, setQuantity, setCartItems } = useData();
 
   return (
     <div className='product__body'>
@@ -47,7 +48,23 @@ function ProductBody() {
           </button>
         </div>
 
-        <button className='product__btn-add'>
+        <button
+          onClick={() => {
+            setQuantity(0)
+            const item = {
+              name: productData.name,
+              price: productData.price,
+              quantity,
+            };
+            setCartItems([item]);
+            const itemStringified = JSON.stringify(item);
+            localStorage.setItem(
+              "ECOMMERCE_PRODUCT_PAGE_FRONTENDMENTOR",
+              itemStringified
+            );
+          }}
+          className='product__btn-add'
+        >
           <img
             src='src/icons/icon-cart.svg'
             style={{ display: "inline-block" }}

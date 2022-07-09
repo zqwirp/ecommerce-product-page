@@ -28,22 +28,24 @@ function Popover() {
           <div className='popover__body'>
             {cartItems.length !== 0 ? (
               <div className='popover__item'>
-                <div className='content'>
-                  <img
-                    className='content__img'
-                    src='src/images/image-product-1-thumbnail.jpg'
-                  />
-                  <div className='content__name'>{productData.name}</div>
-                  <div className='content__price'>
-                    {productData.price} &times; {quantity}{" "}
-                    <span style={{ fontWeight: "bold", color: "black" }}>
-                      {productData.price * quantity}
-                    </span>
+                {cartItems.map((item, index) => (
+                  <div className='content' key={index}>
+                    <img
+                      className='content__img'
+                      src='src/images/image-product-1-thumbnail.jpg'
+                    />
+                    <div className='content__name'>{item.name}</div>
+                    <div className='content__price'>
+                      {item.price} &times; {item.quantity}{" "}
+                      <span style={{ fontWeight: "bold", color: "black" }}>
+                        {item.price * item.quantity}
+                      </span>
+                    </div>
+                    <div className='icon content__btn'>
+                      <img src='src/icons/icon-delete.svg' />
+                    </div>
                   </div>
-                  <div className='icon content__btn'>
-                    <img src='src/icons/icon-delete.svg' />
-                  </div>
-                </div>
+                ))}
               </div>
             ) : (
               <div

@@ -428,6 +428,15 @@ a {
   background-color: #dddddddd;
   border: 2px solid hsl(26, 100%, 55%);
 }
+.attribution {
+  text-align: center;
+  line-height: 50px;
+}
+.attribution a {
+  display: inline;
+  text-decoration: revert;
+  color: revert;
+}
 
 @media screen and (min-width: 360px) {
   .popover {
