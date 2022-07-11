@@ -15,11 +15,11 @@ function Navbar() {
               document.body.style.overflow = "hidden";
             }}
           >
-            <img src='src/icons/icon-menu.svg' alt='menu' />
+            <img src='/icons/icon-menu.svg' alt='menu' />
           </button>
 
           <a href='#'>
-            <img src='src/icons/logo.svg' alt='logo' />
+            <img src='/icons/logo.svg' alt='logo' />
           </a>
 
           <nav className='navbar__nav'>
@@ -35,7 +35,7 @@ function Navbar() {
           <Popover />
 
           <button className='navbar__avatar'>
-            <img src='src/images/image-avatar.png' alt='logo' />
+            <img src='/images/image-avatar.png' alt='logo' />
           </button>
         </div>
       </div>

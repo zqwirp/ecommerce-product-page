@@ -15,7 +15,7 @@ function Slider() {
           }
         }}
         className='slider__img'
-        src={`src/images/image-product-${productImgNum}.jpg `}
+        src={`/images/image-product-${productImgNum}.jpg `}
         alt='img'
       />
 
@@ -29,7 +29,7 @@ function Slider() {
         }}
         className='slider__btn-prev btn'
       >
-        <img src='src/icons/icon-previous.svg' alt='img' />
+        <img src='/icons/icon-previous.svg' alt='img' />
       </button>
 
       <button
@@ -42,7 +42,7 @@ function Slider() {
         }}
         className='slider__btn-next btn'
       >
-        <img src='src/icons/icon-next.svg' alt='img' />
+        <img src='/icons/icon-next.svg' alt='img' />
       </button>
     </div>
   );

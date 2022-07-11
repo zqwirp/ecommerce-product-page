@@ -13,14 +13,14 @@ function Lightbox() {
           }}
           className='lightbox__btn-close'
         >
-          <img src='src/icons/icon-close.svg' alt='icon' />
+          <img src='/icons/icon-close.svg' alt='icon' />
         </button>
 
         <div className='lightbox__img-group'>
           <div className='lightbox__main'>
             <img
               className='lightbox__main-img'
-              src={`src/images/image-product-${productImgNum}.jpg`}
+              src={`/images/image-product-${productImgNum}.jpg`}
               alt='image'
             />
 
@@ -34,7 +34,7 @@ function Lightbox() {
               }}
               className='btn lightbox__btn-prev'
             >
-              <img src='src/icons/icon-previous.svg' />
+              <img src='/icons/icon-previous.svg' />
             </button>
 
             <button
@@ -47,7 +47,7 @@ function Lightbox() {
               }}
               className='btn lightbox__btn-next'
             >
-              <img src='src/icons/icon-next.svg' />
+              <img src='/icons/icon-next.svg' />
             </button>
           </div>
 
@@ -60,7 +60,7 @@ function Lightbox() {
                 }`}
                 onClick={() => setProductImgNum(n)}
               >
-                <img src={`src/images/image-product-${n}.jpg`} alt={n} />
+                <img src={`/images/image-product-${n}.jpg`} alt={n} />
               </div>
             ))}
           </div>

@@ -33,7 +33,7 @@ function ProductBody() {
               })
             }
           >
-            <img src='src/icons/icon-minus.svg' />
+            <img src='/icons/icon-minus.svg' />
           </button>
           <div className='quantity'>{quantity}</div>
           <button
@@ -44,7 +44,7 @@ function ProductBody() {
               })
             }
           >
-            <img src='src/icons/icon-plus.svg' />
+            <img src='/icons/icon-plus.svg' />
           </button>
         </div>
 
@@ -68,7 +68,7 @@ function ProductBody() {
           className='product__btn-add'
         >
           <img
-            src='src/icons/icon-cart.svg'
+            src='/icons/icon-cart.svg'
             style={{ display: "inline-block" }}
           />
           <div>Add to Cart</div>

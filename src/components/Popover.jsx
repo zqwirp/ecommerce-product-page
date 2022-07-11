@@ -18,7 +18,7 @@ function Popover() {
         className={`icon navbar__icon-cart ${isPopoverOpen && "active"}`}
         onClick={togglePopover}
       >
-        <img src='src/icons/icon-cart.svg' alt='cart' />
+        <img src='/icons/icon-cart.svg' alt='cart' />
         {cartItems.length !== 0 && (
           <div
             style={{
@@ -49,7 +49,7 @@ function Popover() {
                   <div className='content' key={index}>
                     <img
                       className='content__img'
-                      src='src/images/image-product-1-thumbnail.jpg'
+                      src='/images/image-product-1-thumbnail.jpg'
                     />
                     <div className='content__name'>{item.name}</div>
                     <div className='content__price'>
@@ -68,7 +68,7 @@ function Popover() {
                       }}
                       className='btn content__btn'
                     >
-                      <img src='src/icons/icon-delete.svg' />
+                      <img src='/icons/icon-delete.svg' />
                     </button>
                   </div>
                 ))}
