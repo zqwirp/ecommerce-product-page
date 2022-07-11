@@ -50,18 +50,20 @@ function ProductBody() {
 
         <button
           onClick={() => {
-            setQuantity(0)
-            const item = {
-              name: productData.name,
-              price: productData.price,
-              quantity,
-            };
-            setCartItems([item]);
-            const itemStringified = JSON.stringify(item);
-            localStorage.setItem(
-              "ECOMMERCE_PRODUCT_PAGE_FRONTENDMENTOR",
-              itemStringified
-            );
+            if (quantity > 0) {
+              const item = {
+                name: productData.name,
+                price: productData.price,
+                quantity,
+              };
+              setCartItems([item]);
+              setQuantity(0);
+              const itemStringified = JSON.stringify(item);
+              localStorage.setItem(
+                "ECOMMERCE_PRODUCT_PAGE_FRONTENDMENTOR",
+                itemStringified
+              );
+            }
           }}
           className='product__btn-add'
         >
